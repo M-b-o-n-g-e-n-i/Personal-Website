@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+        <link rel="stylesheet" href="Index.css">
+        <title>Mbo</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Mbo</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav__link">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#info" class="nav__link">My Info</a>
+                        </li>
+                    </ul>
+                    <!--Vala-->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-large-line"></i>
+                    </div>
+                </div>
+                <!--Toggle-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-2-line"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <img src="images/Mbongeni.jpg" alt="image" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__name"> Mbongeni Hope <br> Mhlongo </h1>
+                        <h3 class="home_occupation">Aspiring Software Engineer</h3>
+                    </div>
+
+                    <a href="#projects" class="home_scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-line"></i>
+                        </div>
+
+                        <span class="home_scroll-text">Recent Projects</span>
+                    </a>
+                </div>
+            </section>
+            <section class="projects section" id="projects">
+                <h2 class="section__title">Recent Works</h2>
+
+                <div class="project__container container grid">
+                    <article class="project__card">
+                        <a href="#" target="_blank" class="project__link">
+                            <h2 class="project__title">eSpaza</h2>
+                            <p class="project__description">
+                                eSpaza is a React-based e-commerce web application 
+                                designed to facilitate online shopping and management for spaza shops. <a href="https://github.com/ndlanzi-c137/e-spaza-project.git">GitHub Link.</a>
+                            </p>
+
+                            <img src="images/logo.png" alt="image" class="project__img">
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+
+                    <article class="project__card">
+                        <a href="#" target="_blank" class="project__link">
+                            <h2 class="project__title">Swapify</h2>
+                            <p class="project__description">
+                                Swapify is Mobile application for Android built using Java and Android Studio,
+                                the purpose of the application is to facilitate the buying and selling of goods online. <a href="https://github.com/ndlanzi-c137/e-spaza-project.git">GitHub Link.</a>
+                            </p>
+
+                            <img src="images/SwapifyLogo.png" alt="image" class="project__img">
+
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section class="myInfo section" id="info">
+                <h2 class="section__title">My Info</h2>
+
+                <div class="info__container container grid">
+                    <div class="about grid">
+                        <div class="about__content">
+                            <h3 class="info__title">About Me</h3>
+                            <p class="about__description">
+                                I am a dedicated <b> Computer Science student </b> and <b> aspiring Software Engineer. </b> 
+                                I thrive on the opportunity to transform innovative concepts into tangible solutions that address real-world challenges. 
+                                The field of software development provides me with the platform to turn ideas into reality, and I am eager to contribute my skills and knowledge to this dynamic field.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="skills">
+                        <h3 class="info__title">Skills</h3>
+
+                        <div class="skills__content grid">
+                            <div class="skills__box">
+                                <img src="images/html5-line.svg" alt="image" class="skills__img">
+                                <span class="skills__name">HTML</span>
+                            </div>
+                            <div class="skills__box">
+                                <img src="images/css3-fill.svg" alt="image" class="skills__img">
+                                <span class="skills__name">CSS</span>
+                            </div>
+                            <div class="skills__box">
+                                <img src="images/javascript-line.svg" alt="image" class="skills__img">
+                                <span class="skills__name">JavaScript</span>
+                            </div>
+                            <div class="skills__box">
+                                <img src="images/java-fill.svg" alt="image" class="skills__img">
+                                <span class="skills__name">Java</span>
+                            </div>
+                            <div class="skills__box">
+                                <img src="images/reactjs-fill.svg" alt="image" class="skills__img">
+                                <span class="skills__name">React</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container grid">
+                <ul class="footer__links">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#info" class="footer__link">My Info</a>
+                    </li>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; All Rights Reserved By Mbo
+                </span>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <script src="scrollreveal.min.js"></script>
+
+        <script src="Index.js"></script>
+    </body>
+</html>
